@@ -24,6 +24,59 @@
             aria-valuemax="100"></div>
     </div>
     <!-- SECCIÓN NAVBAR  -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Sesión 66</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="htmlDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            HTML
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="htmlDropdown">
+                            <li><a class="dropdown-item" href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">MDN HTML</a></li>
+                            <li><a class="dropdown-item" href="https://www.w3schools.com/html/" target="_blank">W3Schools HTML</a></li>
+                            <li><a class="dropdown-item" href="https://htmlreference.io/" target="_blank">HTML Reference</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="cssDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            CSS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="cssDropdown">
+                            <li><a class="dropdown-item" href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">MDN CSS</a></li>
+                            <li><a class="dropdown-item" href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+                            <li><a class="dropdown-item" href="https://flexboxfroggy.com/#es" target="_blank">Flexbox Froggy</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="jsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            JavaScript
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="jsDropdown">
+                            <li><a class="dropdown-item" href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">MDN JavaScript</a></li>
+                            <li><a class="dropdown-item" href="https://javascript.info/" target="_blank">JavaScript.info</a></li>
+                            <li><a class="dropdown-item" href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/" target="_blank">FreeCodeCamp JS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="frameworksDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Frameworks
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="frameworksDropdown">
+                            <li><a class="dropdown-item" href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+                            <li><a class="dropdown-item" href="https://reactjs.org/" target="_blank">React</a></li>
+                            <li><a class="dropdown-item" href="https://vuejs.org/" target="_blank">Vue.js</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br><br>
     <!-- ------------ -->
     <div class="row">
         <div class="col-8"></div>
@@ -50,8 +103,90 @@
 
     <!-- SECCIÓN TABLA /CONTENIDO-->
     <!-- ------------ -->
+    <div class="container">
+        <h3 class="text-center mb-4">Comparativa: JavaScript vs TypeScript</h3>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">Aspecto</th>
+                        <th scope="col">JavaScript</th>
+                        <th scope="col">TypeScript</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Tipado</th>
+                        <td>Dinámico y débil, más flexible pero propenso a errores</td>
+                        <td>Estático y fuerte, detecta errores en tiempo de compilación</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Curva de aprendizaje</th>
+                        <td>Más sencilla, ideal para principiantes</td>
+                        <td>Más pronunciada, requiere conocer conceptos de POO</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Mantenibilidad</th>
+                        <td>Puede ser difícil en proyectos grandes</td>
+                        <td>Código más mantenible y autodocumentado</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Productividad</th>
+                        <td>Desarrollo inicial más rápido</td>
+                        <td>Mejor productividad a largo plazo, mejor autocompletado</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Compatibilidad</th>
+                        <td>Funciona directamente en navegadores</td>
+                        <td>Necesita ser compilado a JavaScript</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Ecosistema</th>
+                        <td>Muy amplio y maduro</td>
+                        <td>Creciente, con mejor soporte para herramientas modernas</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 
     <!-- SECCIÓN CARRUSEL /PORTADA-->
+    <div class="card mx-auto" style="max-width: 600px;">
+        <div class="card-body">
+            <h5 class="card-title text-center mb-4">Música para programar</h5>
+            <div id="carouselVideos" class="carousel slide d-flex justify-content-center" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselVideos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselVideos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselVideos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/K1ZAX8ZC1SQ?si=86GKKtJ9urx2H74n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="carousel-item">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/M1PcxAESEnY?si=CPkcA2vKS8bYX11a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="carousel-item">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/X6ko4cklXjs?si=dwEC2FjWFbYHLuQq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselVideos" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselVideos" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="card-footer text-center mt-3">
+                <a href="https://www.youtube.com" target="_blank" class="btn btn-primary">
+                    <i class="bi bi-youtube"></i> Ver más en YouTube
+                </a>
+            </div>
+        </div>
+    </div>
     <!-- ------------ -->
 
     <!-- SECCIÓN ACCORDION / SISTEMAS OPERATIVOS-->
@@ -72,7 +207,64 @@
     <!-- ------------ -->
 
 
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto text-center">
+                    <h4>Proyecto Colaborativo Git & GitHub</h4>
+                    <p class="mb-3">
+                        Este proyecto representa el ejercicio final del curso, desarrollado de manera colaborativa 
+                        para demostrar el uso práctico de ramas (branches) en Git y GitHub.
+                    </p>
+                    <div class="border-top pt-3">
+                        <h5>Agradecimientos</h5>
+                        <p>
+                            Queremos expresar nuestro más sincero agradecimiento a todos los participantes 
+                            del curso por su dedicación y entusiasmo durante este proceso de aprendizaje.
+                        </p>
+                        <p class="mb-0">
+                            <em>Ricardo Medina & Juan Silva</em><br>
+                            <small>Instructores del Curso</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
+    <!-- SECCIÓN MODAL / GATOS -->
+    <div class="modal fade" id="catModal" tabindex="-1" aria-labelledby="catModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="catModalLabel">¡Gato Aleatorio!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="catImage" src="" alt="Gato aleatorio" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" onclick="loadNewCat()">Nuevo Gato</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="btn btn-success position-fixed bottom-0 start-0 m-3" type="button" data-bs-toggle="modal" data-bs-target="#catModal" onclick="loadNewCat()">
+        <i class="bi bi-cat"></i> Ver Gato
+    </button>
+
+    <script>
+        function loadNewCat() {
+            fetch('https://api.thecatapi.com/v1/images/search')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('catImage').src = data[0].url;
+                })
+                .catch(error => console.error('Error:', error));
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
