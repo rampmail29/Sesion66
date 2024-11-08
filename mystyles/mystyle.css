@@ -1,0 +1,7 @@
+footer {
+    padding: 20px 0; /* Espaciado arriba y abajo */
+}
+.footer-img {
+    max-width: 100px; /* Ajusta el tamaño de las imágenes */
+    margin: 0 15px; /* Espaciado entre las imágenes */
+}
